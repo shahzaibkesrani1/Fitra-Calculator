@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitra Calculator | Shahzaib Kesrani</title>
+</head>
+
+<body>
+    <script>
+
+        var fitraType = prompt("Which type of Fitra do you want to give? (wheat, date, or kishmish)");
+        var numPeople = prompt("How many people will you be giving Fitra for My Brother?");
+// neche hum if chala rahe ke yeh na ho toh yeh hojye
+        var price;
+        if (fitraType === "wheat") {
+            price = 300;
+        } else if (fitraType === "date") {
+            price = 2800;
+        } else if (fitraType === "kishmish") {
+            price = 10000;
+            
+        } else {
+            alert("Invalid Fitra Name My Brother");
+        }
+        // ab Neche Hum Calculate Karva rahe ke if price matlab khali price ka jo var rakha tha 
+        if (price) {
+            // or neche ab vo varibles ko multiply kara raha
+            var fitraAmount = numPeople * price;
+            confirm("You need to give " + fitraAmount + " Rupees Pkr " + " for Fitra" + " "+ "of" + " " + fitraType +"." );
+        }
+    </script>
+</body>
+
+</html>
